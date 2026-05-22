@@ -1,9 +1,13 @@
 import hashlib
+
 password="My_password_is_1"
+
 hash_0 = hashlib.sha384(password.encode())
 print(hash_0.hexdigest())
+
 hash_1 = hashlib.sha256(password.encode())
 print(hash_1.hexdigest())
+
 hash_2 = hashlib.sha224(password.encode())
 print(hash_2.hexdigest())
 
